@@ -30,6 +30,9 @@ if __name__ == '__main__':
 
             method , *value = deque_commands
 
+            #another way to solve this
+            #getattr(d,method)(*value)
+
             for i in value:
 
                 exec(f'd.{method}({value.pop()})')
